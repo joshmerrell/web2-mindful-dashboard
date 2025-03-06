@@ -20,6 +20,8 @@ const daysUntilGraduation = getDaysUntilEvent(graduation);
 document.querySelector(".daysUntilEvent").textContent = daysUntilGraduation;
 
 // Streak of Days
+const streak = getDayStreak(`${currentYear}-01-01`);
+streakElem.textContent = streak;
 
 // age of
 const birthDate = "1991-09-17";

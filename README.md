@@ -1,4 +1,5 @@
 # Mindful Dashboard
+Deployed at https://web2-mindful-dashboard-joshmerrell.netlify.app/
 
 ## Why? 
 * Introductiont to core JavaScript concepts

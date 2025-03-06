@@ -1,12 +1,10 @@
-/* Diagnostic Styling */
-* {
-  outline: 2px dotted gray;
-} 
-
-
 /* temp background color */
 body {
-  background: peachpuff;
+  background: #75715e;
+}
+
+.currentTimePre {
+  margin-right: 0.5em;
 }
 
 .bento-container {
@@ -21,25 +19,24 @@ body {
   background: #75715e;
   color: #f8f8f2;
   border-radius: 4px;
-  aspect-ratio: 2;
 }
 
-.feature-1 {
-  grid-column: span 2;
+.bento-item:nth-of-type(2) {
   background: #6a7ec8;
 }
-.feature-2 {
+.bento-item:nth-of-type(3) {
   background: #f92672;
 }
-.feature-3 {
+.bento-item:nth-of-type(4) {
   background: #a6e22e;
   color: #34352f;
 }
-.feature-4 {
+.bento-item:nth-of-type(5) {
   background: #ae81ff;
 }
-.feature-5 {
+.bento-item:nth-of-type(6) {
   background: #66d9ef;
+  color: black;
 }
 
 .bento-item:hover {
@@ -57,7 +54,7 @@ body {
   .bento-container {
     grid-template-columns: 1fr;
   }
-  .feature-1 {
+  .bento-item:nth-of-type(1) {
     grid-column: span 1;
   }
   .bento-item {

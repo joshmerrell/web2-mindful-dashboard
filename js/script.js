@@ -2,24 +2,33 @@
 console.log("👍 Okay");
 
 
-// Days Until an Event
+// elements
+const daysUntilEventElem = document.querySelector(".daysUntilEvent");
+const ageOfPersonElem = document.querySelector(".ageOfPerson");
+const streakElem = document.querySelector(".streakOfDays");
+const gradientTile = document.querySelector(".gradientTile");
 
+
+// set gradient tile background
+gradientTile.style.background = randomLinearGradient();
+
+
+// Days Until graduation
+const currentYear = new Date().getFullYear();
+const graduation = `${currentYear}-06-14`;
+const daysUntilGraduation = getDaysUntilEvent(graduation);
+document.querySelector(".daysUntilEvent").textContent = daysUntilGraduation;
 
 // Streak of Days
 
+// age of
+const birthDate = "1991-09-17";
+const ageOfLinuxKernel = calculateAgeOf( birthDate );
 
-// Age of Person, Place, or Thing
-// Unit Test
-const birthDate = "1973-09-29"; // YYYY-MM-DD format
-// const birthDateOfSwoop = "September 29, 1973"; // Month DD, YYYY
-// const birthDateOfSwoop = "09/09/1973"; // MM/DD/YYYY
-const ageOfPerson = calculateAgeOf( birthDate );
-console.log( ageOfPerson );
 
-// Unit test
-// Get HTML element
 const elemAgeOfPerson = document.querySelector('.ageOfPerson');
+elemAgeOfPerson.textContent = ageOfLinuxKernel;
 
 // Set to HTML element
-elemAgeOfPerson.textContent = ageOfPerson;
-elemAgeOfPerson.setAttribute("datetime", ageOfPerson );
+elemAgeOfPerson.textContent = ageOfLinuxKernel;
+elemAgeOfPerson.setAttribute("datetime", ageOfLinuxKernel );

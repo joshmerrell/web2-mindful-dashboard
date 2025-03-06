@@ -6,6 +6,61 @@
 
 /* temp background color */
 body {
-    background: peachpuff;
+  background: peachpuff;
+}
+
+.bento-container {
+  background: #272822;
+  font-family: sans-serif;
+  grid-template-columns: repeat(5,1fr);
+  border-radius: 8px;
+  grid-template-rows: repeat(1,1fr);
+}
+
+.bento-item {
+  background: #75715e;
+  color: #f8f8f2;
+  border-radius: 4px;
+  aspect-ratio: 2;
+}
+
+.feature-1 {
+  grid-column: span 2;
+  background: #6a7ec8;
+}
+.feature-2 {
+  background: #f92672;
+}
+.feature-3 {
+  background: #a6e22e;
+  color: #34352f;
+}
+.feature-4 {
+  background: #ae81ff;
+}
+.feature-5 {
+  background: #66d9ef;
+}
+
+.bento-item:hover {
+  background: #ac6218;
+  color: #f8f8f2;
+}
+
+@media (max-width: 768px) {
+  .bento-container {
+    grid-template-columns: repeat(2, 1fr);
+  } 
+}
+
+@media (max-width: 480px) {
+  .bento-container {
+    grid-template-columns: 1fr;
   }
-  
+  .feature-1 {
+    grid-column: span 1;
+  }
+  .bento-item {
+    aspect-ratio: unset;
+  }
+}

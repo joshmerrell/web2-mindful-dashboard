@@ -8,7 +8,7 @@
 * Explore pro/cons of JS libraries, plugins, frameworks, etc.
 
 ## Citations
-* List your citations here
+* [Monokai color theme](https://gist.github.com/brayevalerien/cb94ac685ebc186f359deae113b6710c)
 
 ## How?
 * Simply click on "Use this template" button to create a new repository

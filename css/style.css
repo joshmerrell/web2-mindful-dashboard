@@ -1,6 +1,18 @@
-/* temp background color */
+:root {
+  --body-bg: #75715e;
+  --bento-container-bg: #272822;
+  --bento-item-bg: #75715e;
+  --bento-item-color: #f8f8f2;
+  --feature2-bg: #6a7ec8;
+  --feature3-bg: #f92672;
+  --feature4-bg: #a6e22e;
+  --feature5-bg: #66d9ef;
+  --hover-bg: #ac6218;
+}
+
+
 body {
-  background: #75715e;
+  background: var(--body-bg);
 }
 
 .currentTimePre {
@@ -8,7 +20,7 @@ body {
 }
 
 .bento-container {
-  background: #272822;
+  background: var(--bento-container-bg);
   font-family: sans-serif;
   grid-template-columns: repeat(5,1fr);
   border-radius: 8px;
@@ -16,32 +28,29 @@ body {
 }
 
 .bento-item {
-  background: #75715e;
-  color: #f8f8f2;
+  background: var(--bento-item-bg);
+  color: var(--bento-item-color);
   border-radius: 4px;
 }
 
 .bento-item:nth-of-type(2) {
-  background: #6a7ec8;
+  background: var(--feature2-bg);
 }
 .bento-item:nth-of-type(3) {
-  background: #f92672;
+  background: var(--feature3-bg);
 }
 .bento-item:nth-of-type(4) {
-  background: #a6e22e;
+  background: var(--feature4-bg);
   color: #34352f;
 }
 .bento-item:nth-of-type(5) {
-  background: #ae81ff;
-}
-.bento-item:nth-of-type(6) {
-  background: #66d9ef;
+  background: var(--feature5-bg);
   color: black;
 }
 
-.bento-item:hover {
-  background: #ac6218;
-  color: #f8f8f2;
+section.bento-item:hover {
+  background: var(--hover-bg);
+  color: var(--bento-item-color);
 }
 
 @media (max-width: 768px) {

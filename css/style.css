@@ -31,6 +31,7 @@ body {
   background: var(--bento-item-bg);
   color: var(--bento-item-color);
   border-radius: 4px;
+  user-select: none;
 }
 
 .bento-item:nth-of-type(2) {

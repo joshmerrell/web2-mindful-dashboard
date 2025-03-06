@@ -11,6 +11,9 @@ const gradientTile = document.querySelector(".gradientTile");
 
 // set gradient tile background
 gradientTile.style.background = randomLinearGradient();
+gradientTile.addEventListener("click", () => {
+    gradientTile.style.background = randomLinearGradient();
+});
 
 
 // Days Until graduation
